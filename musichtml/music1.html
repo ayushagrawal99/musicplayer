@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- this is the music player web page. this is responsive web page.
+       when we click over latest singer image section then a new web page
+    opend evry time. when we take over the mouse on latest realease section
+   image then a song stop icon is hover and in footer music control section
+   is opend. queue is fully responsive and scrollable. latest realease section
+   also scrollable.  -->
+
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../musiccss/music.css">
+    <title>Music Player Web Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../music.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav">
+                <div id="logo">
+                    <div class="logo-img">
+                        <img src="../images/musiclogo.jpg">
+                    </div>
+                    <div class="logo-text">
+                        <h3>Ninja</h3>
+                        <h3>Studio</h3>
+                    </div>
+                </div>
+                <div id="logo-fav">
+                    <h3><a href="#">Favourities</a></h3>
+                </div>
+                <div id="logo-search">
+                    <div class="s-log">
+                        <a href="#"><i class="fa fa-search"></i></a>
+                    </div>
+                    <div class="inp">
+                        <input type="text" id="txt" placeholder="Search">
+                    </div>
+                    <div class="s-log">
+                        <a href="#"><i class="fa fa-microphone"></i></a>
+                    </div>
+                </div>
+                <div id="notif">
+                    <a href="#"><i class="fa fa-bell"></i></a>
+                </div>
+                <div id="prof-pic">
+                    <img src="../images/ayush pic.jpg">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--  ..........carousel-container..........   -->
+
+    <main id="main-container">
+        <div id="main-sec">
+            <div id="side-bar">
+                <i class="fa fa-reorder"></i>
+            </div>
+                <div id="carousel-container">
+                    <div class="carousel-pic-container">
+                        <img src="../images/carpic2.jpg" class="carousel-pic">    
+                    </div>
+                    <div class="carousel-pic-container zind">
+                        <img src="../images/carpic2.jpg" class="carousel-pic">    
+                    </div>
+                    <div class="carousel-pic-container">
+                        <img src="../images/carpic2.jpg" class="carousel-pic">    
+                    </div>
+                </div>
+  
+             <!-- Latest songs container  -->
+
+                <div id="latest-container">
+                    <div id="latest-text">
+                        <h3>Latest Release</h3>
+                    </div>
+                    <div id="arrange">
+                        <div class="latest-song-single-div">
+                            <div class="latest-pic">
+                                <a href="#"><img src="../images/songimg7.jpg"></a>
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="latest-song-text">
+                                <h3>Singer</h3>
+                                <p>AUG 11, 2019</p>
+                            </div>
+                            <div class="latest-logo-time">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                       <a href="#">Add</a>
+                                       <a href="#">Remove</a>
+                                       <a href="#">Like</a>
+                                    </div>
+                                </div>  
+                                <time>4.44</time>
+                            </div>
+                        </div>
+                        <div class="latest-song-single-div">
+                            <div class="latest-pic">
+                                <a href="#"><img src="../images/songimg7.jpg"></a>
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="latest-song-text">
+                                <h3>Singer</h3>
+                                <p>AUG 11, 2019</p>
+                            </div>
+                            <div class="latest-logo-time">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                       <a href="#">Add</a>
+                                       <a href="#">Remove</a>
+                                       <a href="#">Like</a>
+                                    </div>
+                                </div>  
+                                <time>4.44</time>
+                            </div>
+                        </div>
+                        <div class="latest-song-single-div">
+                            <div class="latest-pic">
+                                <a href="#"><img src="../images/songimg7.jpg"></a>
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="latest-song-text">
+                                <h3>Singer</h3>
+                                <p>AUG 11, 2019</p>
+                            </div>
+                            <div class="latest-logo-time">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                       <a href="#">Add</a>
+                                       <a href="#">Remove</a>
+                                       <a href="#">Like</a>
+                                    </div>
+                                </div>  
+                                <time>4.44</time>
+                            </div>
+                        </div>
+                        <div class="latest-song-single-div">
+                            <div class="latest-pic">
+                                <a href="#"><img src="../images/songimg7.jpg"></a>
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="latest-song-text">
+                                <h3>Singer</h3>
+                                <p>AUG 11, 2019</p>
+                            </div>
+                            <div class="latest-logo-time">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                       <a href="#">Add</a>
+                                       <a href="#">Remove</a>
+                                       <a href="#">Like</a>
+                                    </div>
+                                </div>  
+                                <time>4.44</time>
+                            </div>
+                        </div>
+                        <div class="latest-song-single-div">
+                            <div class="latest-pic">
+                                <a href="#"><img src="../images/songimg7.jpg"></a>
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="latest-song-text">
+                                <h3>Singer</h3>
+                                <p>AUG 11, 2019</p>
+                            </div>
+                            <div class="latest-logo-time">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                       <a href="#">Add</a>
+                                       <a href="#">Remove</a>
+                                       <a href="#">Like</a>
+                                    </div>
+                                </div>  
+                                <time>4.44</time>
+                            </div>
+                        </div>
+                        <div class="latest-song-single-div">
+                            <div class="latest-pic">
+                                <a href="#"><img src="../images/songimg7.jpg"></a>
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="latest-song-text">
+                                <h3>Singer</h3>
+                                <p>AUG 11, 2019</p>
+                            </div>
+                            <div class="latest-logo-time">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                       <a href="#">Add</a>
+                                       <a href="#">Remove</a>
+                                       <a href="#">Like</a>
+                                    </div>
+                                </div>  
+                                <time>4.44</time>
+                            </div>
+                        </div>
+                        <div class="latest-song-single-div">
+                            <div class="latest-pic">
+                                <a href="#"><img src="../images/songimg7.jpg"></a>
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="latest-song-text">
+                                <h3>Singer</h3>
+                                <p>AUG 11, 2019</p>
+                            </div>
+                            <div class="latest-logo-time">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                       <a href="#">Add</a>
+                                       <a href="#">Remove</a>
+                                       <a href="#">Like</a>
+                                    </div>
+                                </div>  
+                                <time>4.44</time>
+                            </div>
+                        </div>
+                        <div class="latest-song-single-div">
+                            <div class="latest-pic">
+                                <a href="#"><img src="../images/songimg7.jpg"></a>
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="latest-song-text">
+                                <h3>Singer</h3>
+                                <p>AUG 11, 2019</p>
+                            </div>
+                            <div class="latest-logo-time">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                    <div class="dropdown-content">
+                                       <a href="#">Add</a>
+                                       <a href="#">Remove</a>
+                                       <a href="#">Like</a>
+                                    </div>
+                                </div>  
+                                <time>4.44</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ............Popular Artist........... -->
+
+                <div id="popular-artist">
+                    <div class="individual-header-text">
+                        <h3>Popular Artist</h3>   
+                    </div>
+                    <div id="arrange-pop-sing">
+                        <div class="single-pop-sing">
+                            <div class="singer-img">
+                                <a href="file:///E:/WEB%20projects/musicplayer/musichtml/coldplay.html"><img src="../images/ed-sheeran.jpg"></a>
+                            </div>
+                            <div class="singer-name">
+                                <h3>Singer Name</h3>
+                            </div>
+                        </div>
+                        <div class="single-pop-sing">
+                            <div class="singer-img">
+                                <a href="file:///E:/WEB%20projects/musicplayer/musichtml/coldplay.html"><img src="../images/latest-eng-2.jpg"></a>
+                            </div>
+                            <div class="singer-name">
+                                <h3>Singer Name</h3>
+                            </div>
+                        </div>
+                        <div class="single-pop-sing">
+                            <div class="singer-img">
+                                <a href="file:///E:/WEB%20projects/musicplayer/musichtml/coldplay.html"><img src="../images/latest-eng-5.jpg"></a>
+                            </div>
+                            <div class="singer-name">
+                                <h3>Singer Name</h3>
+                            </div>
+                        </div>
+                        <div class="single-pop-sing">
+                            <div class="singer-img">
+                                <a href="file:///E:/WEB%20projects/musicplayer/musichtml/coldplay.html"><img src="../images/zayn-malik.jpg"></a>
+                            </div>
+                            <div class="singer-name">
+                                <h3>Singer Name</h3>
+                            </div>
+                        </div>
+                        <div class="single-pop-sing">
+                            <div class="singer-img">
+                                <a href="file:///E:/WEB%20projects/musicplayer/musichtml/coldplay.html"><img src="../images/weekend.jpg"></a>
+                            </div>
+                            <div class="singer-name">
+                                <h3>Singer Name</h3>
+                            </div>
+                        </div>
+                        <div class="single-pop-sing">
+                            <div class="singer-img">
+                                <a href="file:///E:/WEB%20projects/musicplayer/musichtml/coldplay.html"><img src="../images/popsinger1.jpg"></a>
+                            </div>
+                            <div class="singer-name">
+                                <h3>Singer Name</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               <!-- .............. Music type ............. -->
+
+             <div id="music-type">
+                 <div class="single-music-type">
+                     <div class="music-type-pic">
+                        <img src="../images/roadmusic.jpg">
+                     </div>
+                     <p class="music-type-text">Road</p>
+                 </div>
+                 <div class="single-music-type">
+                    <div class="music-type-pic">
+                      <img src="../images/electronicmusic.jpg">
+                    </div>
+                    <p class="music-type-text long-txt">Electronic</p>
+                </div>
+                <div class="single-music-type">
+                    <div class="music-type-pic">
+                       <img src="../images/partymusic.jpg">
+                    </div>
+                    <p class="music-type-text">Party</p>
+                </div>
+             </div>
+
+             <!-- ...........Latest hindi song........  -->
+
+             <div id="popular-artist">
+                <div class="individual-header-text">
+                    <h3>Latest Hindi</h3>
+                </div>
+                <div id="arrange-pop-sing">
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/zayn-malik.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/weekend.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/popsinger4.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/latest-eng-5.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/ed-sheeran.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/coldplaypic.png">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+
+            <!-- ...........Latest English............ -->
+
+
+            <div id="popular-artist">
+                <div class="individual-header-text">
+                    <h3>Latest English</h3>
+                </div>
+                <div id="arrange-pop-sing">
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/popsinger6.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/ed-sheeran.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/zayn-malik.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/weekend.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/popsinger1.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                    <div class="single-pop-sing">
+                        <div class="singer-img-hindi">
+                            <img src="../images/post-malone.jpg">
+                        </div>
+                        <div class="singer-name">
+                            <h3>Singer Name</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      
+            <!-- .......aside Section Started........ -->
+
+        <div id="aside-sec">
+            <aside id="aside">
+                <div id="aside-head">
+                    <h2>Queue</h2>
+                    <p>list item</p>
+                </div>
+                <div class="aside-music-container">
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>01</p>
+                        </div>
+                        <div class="aside-song-pic">
+                           <a href="#main-footer"><img src="../images/songimg1.jpg"></a>
+                        </div>
+                        <div class="aside-song-name">
+                            <h3><a>Singer</a></h3>
+                            <p><a>Song name</a></p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>02</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <a href="#main-footer"><img src="../images/songimg6.jpg"></a>
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>03</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <a href="#main-footer"><img src="../images/songimg7.jpg"></a>
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>04</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <a href="#main-footer"><img src="../images/songimg2.jpg"></a>
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>05</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <a href="#main-footer"><img src="../images/songimg3.jpg"></a>
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>06</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg6.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>07</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg2.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>08</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg6.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>09</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg7.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>10</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg1.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>11</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg2.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>12</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg3.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>13</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg7.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>14</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg1.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>15</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg6.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>16</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg6.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>17</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg2.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>18</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg6.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>19</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg7.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>20</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg1.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>21</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg6.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>22</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg6.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>23</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg7.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>24</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg1.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="aside-song-box">
+                        <div class="aside-song-num">
+                            <p>25</p>
+                        </div>
+                        <div class="aside-song-pic">
+                            <img src="../images/songimg7.jpg">
+                        </div>
+                        <div class="aside-song-name">
+                            <h3>Singer</h3>
+                            <p>Song name</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="main-footer">
+            <div class="song-info">
+                <div class="song-pic">
+                    <img src="../images/songimg6.jpg">
+                </div>
+                <div class="song-title">
+                    <h3>Ayush Agrawal</h3>
+                    <p>ayush agrawal</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-heart-o"></i>
+                    <i class="fa fa-ban"></i>
+                </div>
+            </div>
+            <div id="control">
+                <div class="cont">
+                    <i class="fa fa-random"></i>
+                    <i class="fa fa-step-backward"></i>
+                    <i class="fa fa-pause-circle-o"></i>
+                    <i class="fa fa-step-forward"></i>
+                    <i class="fa fa-retweet"></i>
+                </div>
+                <div class="song-progress-bar">
+                    <div class="ft">2.22</div>
+                    <div class="circle"></div>
+                    <div class="song-progress-div">
+                        <div class="song-progress-color"></div>
+                    </div>
+                    <div class="lt">5.55</div>
+                </div>
+            </div>
+
+            <div class="control-right">
+                <div class="contol-logo-first">
+                    <i class="fa fa-thumbs-o-up"></i>
+                </div>
+                <div class="contol-logo-sec">
+                    <i class="fa fa-pause"></i>
+                </div>
+                <div class="contol-logo-third">
+                    <i class="fa fa-volume-up"></i>
+                </div>
+                <div class="prog-bar">
+                    <div class="circle-f"></div>
+                    <div class="song-progress-div-f">
+                        <div class="song-progress-color-f"></div>
+                    </div>
+                </div>
+                <div class="contol-logo-fifth">
+                    <i class="fa fa-expand"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+</body>
+</html>

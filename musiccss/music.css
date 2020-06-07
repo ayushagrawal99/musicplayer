@@ -1,0 +1,1173 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color:  rgb(239,239,243); */
+    background-color: rgb(0, 51, 51);;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+   /* ......    Header Navigation    ........  */
+   /* ........................................  */
+
+.body::-webkit-scrollbar{
+    display: none;
+}
+#nav{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 2;
+    background-color: DimGray;
+}
+
+ /* ........Navigation Logo.........  */
+
+#logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+       /* Nav Logo image */
+.logo-img{
+    width: 22%;
+    height: 100%;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+.logo-img img{
+    width:95%;
+    height: 95%;
+    margin: 2%;
+
+}
+      /* Nav logo text */
+.logo-text{
+    width: 25%;
+    height: 90%;
+    margin-left: 2%;
+}
+.logo-text h3{
+    line-height: 0.2rem;
+    letter-spacing: 0.02rem;
+    font-size:1.1rem;
+    color: wheat;
+}
+    /* Navigation Fav tag*/
+#logo-fav{
+    margin-top: -5px;
+}
+#logo-fav h3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    margin-top: 3px;
+}
+#logo-fav h3 a:hover{
+    color: rgb(102, 255, 204);
+}
+
+      /* Navigation Search Bar */
+#logo-search{
+    position: absolute;
+    top : 15%;
+    left:50%;
+    display: flex; 
+    flex-direction: row;
+    border-radius: 15px 15px;
+    background-color: white;
+}
+.inp input[type=text]{
+    width: 220px;
+    height: 18px;
+    background: transparent;
+    border:none;
+    border-radius: 10px 10px;
+    padding: 7px;
+    color: black;
+    font-size: 20px;
+}
+.s-log a i{
+    width: 25px;
+    height : 25px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+    /* Notification bar on navigation */
+#notif a i{
+    position: absolute;
+    left:84%;
+    top:20%;
+    font-size: 1.6rem;
+    color:  white
+}
+   /* My profile logo pic on Nav Bar */
+#prof-pic img{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left:90%;
+    border-radius: 50%;;
+}
+
+      /* .........  Aside section CSS code here   ........ */
+      /* ................................................. */
+
+    #main-container{
+        width: 100%;
+        display: flex;
+    }
+    #aside-sec{
+        width: 24%;
+    }
+    #aside-head{
+        display: flex;
+        margin-top: 7vh;
+    }
+    #aside-head h2{
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    #aside-head p{
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 45%;
+        margin-top: 8%;
+    }
+    .aside-music-container{
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .aside-music-container::-webkit-scrollbar {
+        display: none;
+    }
+        /* .......individual aside single song box.......  */
+
+    .aside-song-box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2%;
+    }
+    .aside-song-num p{
+        color: white;
+        font-size: 1.2rem;
+    }
+    .aside-song-pic{
+        width: 20%;
+        height: 20%;
+        margin-left: 3%;
+    }
+    .aside-song-pic img{
+        width: 90%;
+        height: 90%;
+        margin: 7%;
+        box-shadow: -2px -2px 13px #aaaaaa;
+    }
+    .aside-song-name{
+        width: 40%;
+        height: 5%;
+        margin-left: 5%;
+        text-decoration: none;
+    }
+    .aside-song-name h3{
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.08rem; 
+        margin-top: 1rem;  
+        cursor: pointer;
+    }
+    .aside-song-name p{
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: -1rem;
+        cursor: pointer;
+    }
+    .heart{
+       width: 30%;
+    }   
+    .heart i{
+        color: white;
+        font-size: 1.3rem;
+        margin-left: 70%;
+        margin-top: 25%;
+    }
+    .heart i:hover{
+        color: red;
+        cursor: pointer;
+    }
+
+     /* ........  Starting of main section work  .........  */
+    /* ..................................................... */
+
+    /* carousel image  */
+
+#main-sec{
+    width: 70%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7vh;
+}    
+#main-sec::-webkit-scrollbar {
+    display: none;
+}
+#carousel-container{
+    width: 95%;
+    /* height: 15%; */
+    display: flex;
+    margin: 6% 4% 5% 10%;
+}
+.carousel-pic-container{
+    /* box-shadow: -1rem 0 3rem #000; */
+    transition: 0.4s ease;
+}
+.carousel-pic-container:not(:first-child) {
+    margin-left: -20%;                       
+}
+.carousel-pic-container img{
+    width: 70%;
+    height: 200px;
+}
+.carousel-pic-container img:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.4s ease;
+} 
+
+   /* ..............  Latest Section container CSS Work  .............*/
+#latest-container{
+    width: 90%;
+    margin: 1% 2% 1% 10%;
+    display: flex;
+    flex-direction: column;
+}
+#arrange{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    height: 225px;    
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#arrange::-webkit-scrollbar {
+    display: none;
+  }
+#latest-text h3{
+    margin-top: 0;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+    /* Latest Song single Div details  */
+.latest-song-single-div{
+    width: 45%;
+    display: flex;
+}
+     /* Latest song div image section  */
+.latest-pic{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+.fa-play{
+    font-size: 25px;
+    color: white;
+}
+.latest-pic .fa-play{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: none;
+}
+.latest-pic:hover .fa-play{
+    display: block;            
+}
+.latest-pic img{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}
+.latest-song-text{
+    width: 30%;
+    margin-left: 4%;
+}
+.latest-song-text h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 40px;
+    line-height: 1px;
+}
+.latest-song-text p{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+.latest-logo-time{
+    width: 35%;
+}
+.latest-logo-time time{
+    color: white;
+    font-size: 20px;
+    margin-left: 65%;
+    top: 80%;
+}
+.dropdown{
+    position: relative;
+    margin-left: 70%;
+    margin-top: 15%;
+}
+.dropdown i{
+    color: gray;
+    font-size: 25px;
+    cursor: pointer;
+}
+.dropdown-content{
+    margin-left: -100%;
+    z-index: 99;
+    position: absolute;
+    display: none;
+}
+.dropdown-content a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: white;
+    display: block;
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+   /* ............Popular Singer Section...............  */
+
+#popular-artist{
+    width: 80%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+}
+.individual-header-text h3{
+    margin-top: 0;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+}
+
+#arrange-pop-sing{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.single-pop-sing{
+    width: 16%;
+    height: 100%;
+}
+.singer-img-hindi{
+    width: 97%;
+}
+.singer-img img{
+    width: 95%;
+    border-radius: 50%;
+    height:130px;
+    cursor: pointer;
+}
+.singer-img-hindi img{
+    width: 95%;
+    height:130px;
+    cursor: pointer;
+}
+.singer-name h3{
+    color: lightgray;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: georgia;
+}
+
+   /* Latest Hindi  */
+
+.singer-img-hindi img{
+    width: 95%;
+}
+
+    /* ....................Music type..............  */
+
+#music-type{
+    width: 80%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+}
+.single-music-type{
+    margin-left:2%;
+    width: 31%;
+    height: 120px;
+    position: relative;
+}
+.music-type-pic{
+    width: 100%;
+    height: 100%;
+}
+.music-type-pic img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.music-type-text{
+    color: rgb(8, 163, 42);
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.music-type-pic img:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.4s ease;
+    z-index: 2;
+} 
+.music-type-pic{
+    transition: 0.4s ease;
+}
+   /* ...................  FOOTER .................... */
+
+#main-footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(40,40,40);
+    justify-content: space-between;
+    position: absolute;
+    top: 90vh;
+    position: fixed;
+    display: none;
+}
+
+#main-footer:target{
+    display: block;
+}
+
+.song-info{
+    width: 25%;
+    height: 90%;
+    margin-left:5%;
+    display: flex;
+    flex-direction: row;
+}
+.song-pic{
+    width: 20%;
+    height: 100%;
+}
+.song-pic img{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}
+.song-title{
+    width: 40%;
+    height: 30%;
+    margin-left: 4%;
+}
+.song-title h3{
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 0px;
+    letter-spacing: 1px;
+}
+.song-title p{
+    color: white;
+    font-size: 14px;
+    margin-top: 0;
+    line-height: 5px;
+    letter-spacing: 1px;
+}
+.fa-heart-o{
+    font-size: 25px;
+    color: grey;
+    margin: 12px 5px;
+}
+.fa-ban{
+    font-size: 25px;
+    color: grey;
+    margin: 10px 5px;
+}  
+  /* footer Controls  */
+#control{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    margin-left: 22%;
+    margin-top: 1.5%;
+}
+.cont i{
+    font-size: 20px;
+    color: lightgrey;
+    margin-left: 7%;
+}
+
+.fa-heart{
+    background-color: red;
+}
+/* song progress  */
+.song-progress-bar{
+    display: flex;
+    margin-top: 15px;
+    position: relative;
+}
+.ft{
+    color: white;
+    margin-left: 10%;
+}
+.lt{
+    color: white;
+    margin-left: 2%;
+}
+.circle{
+    position: absolute;
+    width: 22px;
+    height: 18px;
+    border-radius: 50%;
+    z-index: 1;
+    margin-left: 42%;
+    background-color: grey;
+}
+
+.song-progress-div{
+    width: 60%;
+    height: 5px;
+    margin-top: 1%;
+    margin-left: 2%;
+    background-color: lightgrey;
+    position: relative;
+}
+.song-progress-color{
+    width: 40%;
+    height: 5px;
+    position: absolute;
+    background-color: green;
+}
+
+/* right control bar  */
+.control-right{
+    width: 20%;
+    display: flex;
+    margin-right: 5%;
+}
+.control-right i{
+    color: white;
+    font-size: 22px;
+    margin-left: 30%;
+}
+.prog-bar{
+    display: flex;
+    position: relative;
+}
+.circle-f{
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    border-radius: 50%;
+    margin-left: 18%;
+    margin-top: -3.5px;
+    z-index: 1;
+    background-color: grey;
+}
+.control-right i{
+    margin-left: 20px;
+    margin-top: 50%;
+}
+.prog-bar{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 8%;
+}
+.song-progress-div-f{
+    width: 70px;
+    height: 5px;
+    background-color: lightgrey;
+    position: relative;
+}
+.song-progress-color-f{
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    background-color: green;
+}
+
+#side-bar{
+    display: none;
+}
+/* ................................................................... */
+
+    /* ~~~~~~~~~~~~~~~~~~ media query for tablets ~~~~~~~~~~~~~~~ */
+
+@media only screen and (max-width: 768px) {
+
+/* navigation bar */
+#logo-fav h3{
+    margin-top: 12px;
+}
+#logo-fav h3 a{
+    font-size: 18px;
+}
+#logo-search{
+    left: 40%;
+    top: 25%;
+}
+.inp input[type=text]{
+    width: 180px;
+    height: 12px;
+    font-size: 15px;
+}
+.s-log a i{
+    width: 15px;
+    height : 15px;
+    font-size: 1rem;
+}
+#notif a i{
+    left:78%;
+    top:30%;
+    font-size: 1.3rem;
+    color: white;
+}
+#prof-pic img{
+    width: 2rem;
+    height: 2rem;
+    left:85%;
+    border-radius: 50%;
+    top: 20%;
+}
+/* aside section  */
+.aside-music-container{
+    width: 100%;
+}
+#aside-head h2{
+    font-size: 25px;
+}
+#aside-head p{
+    font-size: 17px;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+.aside-song-pic img{
+    margin: 0%;
+    width: 50px;
+    height: 50px;
+    box-shadow: -2px -2px 5px #aaaaaa
+}
+.aside-song-name{
+    width: 100%;
+    height: 50px;
+    margin-left: 8px;
+}
+.aside-song-name h3{
+    font-size: 15px;
+    margin: 10px 0px 4px 13px;
+}
+.aside-song-num{
+    display: none;
+}
+.aside-song-name p{
+    font-size: 0.7rem;
+    margin-left:10px;
+    margin-top: 0px;
+    line-height: 10px;
+    padding:2px;      
+}
+.heart i{
+    font-size: 15px;
+    margin-top: 17px;
+    margin-left: 20px;
+}
+
+/* carousel container  */
+.carousel-pic-container img{
+    width: 70%;
+    height: 130px;
+}
+#carousel-container{
+    margin: 5% 4% 3% 9%;
+}
+/* Latest Section  */
+#arrange{
+    height: 170px;
+}
+#latest-text h3{
+    font-size: 21px;
+}
+.latest-song-single-div{
+    width: 45%;
+    height: 90px;
+}
+.latest-pic{
+    width: 30%;
+    height: 80%;
+    position: relative;
+}
+.fa-play{
+    font-size: 20px;
+}
+.latest-pic .fa-play{
+    position: absolute;
+}
+.latest-pic img{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}
+.latest-song-text{
+    width: 40%;
+}
+.latest-song-text h3{
+    font-size: 18px;
+    margin-top: 28px;
+    line-height: 0px;
+}
+.latest-song-text p{
+    font-size: 11px;
+}
+.latest-logo-time{
+    width: 35%;
+}
+.latest-logo-time i{
+   font-size: 20px;
+   margin-left: 57%;
+}
+.dropdown{
+    margin-left: 1px;
+}
+.latest-logo-time time{
+    font-size: 15px;
+    margin-left: 47%;
+    top: 80%;
+}
+ /* popular section  */
+
+#popular-artist{
+    width: 80%;
+    height: auto;
+    display: flex;
+}
+.individual-header-text h3{
+    font-size: 21px;
+}
+#arrange-pop-sing{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.single-pop-sing{
+    width: 27%;
+    height: 150px;
+}
+.singer-img{
+    width: 97%;
+    height: 100px;
+}
+.singer-img img{
+    width: 95%;
+    height:100px;
+}
+.singer-img-hindi{
+    width: 97%;
+    height: 100px;
+}
+.singer-img-hindi img{
+    width: 95%;
+    height:100px;
+}
+.singer-name h3{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+ /* music type  */
+
+.music-type-pic img{
+    height: 80%;
+}
+.music-type-text{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    top: 20%;
+    left: 30%;
+}
+.long-txt{
+    top:18%;
+    left: 18%;
+}
+
+/* ...............footer................  */
+
+#main-footer{
+    height: 8%;
+    top: 92vh;
+}
+.song-info{
+    margin-top: 2%;
+}
+.song-pic{
+    width: 20%;
+    height: 100%;
+}
+.song-pic img{
+    width: 100%;
+    height: 70%;
+}
+.song-title{
+    margin-left: 5%;
+}
+.song-title h3{
+    font-size: 13px;
+    margin-top: 13px;
+    line-height: 0px;
+    letter-spacing: 0px;
+}
+.song-title p{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 0px;
+    letter-spacing: 1px;
+}
+.fa-heart-o{
+    font-size: 20px;
+    margin: 10px 2px;
+}
+.fa-ban{
+    font-size: 20px;
+    margin: 10px 2px;
+}  
+  /* footer Controls  */
+.cont{
+    margin-top: 3%;
+    margin-left: 15%;
+}
+.cont i{
+    font-size: 18px;
+    margin-left: 5%;
+}
+/* song progress  */
+.ft{
+    margin-left: 0px;
+    margin-top: -1px;
+    font-size: 14px;
+}
+.lt{
+    margin-left: 2%;
+    margin-top: -1px;
+    font-size: 14px;
+}
+.circle{
+    width: 17px;
+    height: 15px;
+    margin-left: 35%;
+    margin-top: -1px;
+}
+/* right control bar  */
+.control-right{
+    width: 20%;
+    display: flex;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+.control-right i{
+    font-size: 18px;
+    margin-left: 0px;
+}
+.circle-f{
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    border-radius: 50%;
+    margin-left: 38%;
+    margin-top: -3px;
+}
+.control-right i{
+    margin-left: 10px;
+    margin-top: 50%;
+}
+.prog-bar{
+    position: relative;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.song-progress-color-f{
+    width: 50%;
+    height: 5px;
+}
+
+}
+
+
+/* ~~~~~~~~~~~~~ media query for mobile phones ~~~~~~~~~~~~~~~~~  */
+
+@media only screen and (max-width: 576px){
+
+/* navigation Section  */
+.logo-img img{
+    width: 30px;
+    height: 40px;
+}
+.logo-text h3{
+    font-size: 12px;
+    margin-left: 35%;
+}
+#logo-fav h3{
+    margin-top: 12px;
+}
+#logo-fav h3 a{
+    font-size: 15px;
+}
+.inp input[type=text]{
+    width: 130px;
+}
+.s-log a i{
+    width: 15px;
+    height : 15px;
+    font-size: 1rem;
+}
+#notif a i{
+    left:80%;
+    font-size: 1.2rem;
+}
+#prof-pic img{
+    left:90%;
+}
+
+/* carousel-pic-container  */
+
+#main-sec{
+    width: 100%;
+    margin-top: 7vh;
+}    
+#carousel-container{
+    margin-top: 0;
+    width: 85%;
+    height: 15%; 
+}
+.carousel-pic-container img{
+    width: 70%;
+    height: 120px;
+}
+#latest-container{
+    width: 90%;
+    margin: 2% 7%;
+}
+#arrange{
+    height: 155px;    
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#arrange::-webkit-scrollbar {
+    display: none;
+  }
+#latest-text h3{
+    font-size: 22px;
+}
+.latest-song-single-div{
+    width: 45%;
+    display: flex;
+}
+.latest-pic{
+    width: 27%;
+    height: 65px;
+}
+.fa-play{
+    font-size: 20px;
+    cursor: pointer;
+}
+.latest-pic img{
+    width: 90%;
+    height: 90%;
+}
+.latest-song-text{
+    width: 34%;
+    margin-left: 3%;
+}
+.latest-song-text h3{
+    font-size: 18px;
+    margin-top: 22px;
+}
+.latest-song-text p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.latest-logo-time{
+    width: 30%;
+}
+.latest-logo-time time{
+    font-size: 15px;
+    margin-left: 60%;
+    top:70%;
+}
+.dropdown i{
+    font-size: 20px;
+    margin-left: 70%;
+    cursor: pointer;
+}
+.dropdown-content{
+    margin-left: 0%;
+}
+
+/* popular artist  */
+
+#popular-artist{
+    width: 85%;
+}
+.individual-header-text h3{
+    font-size: 22px;
+}
+#arrange-pop-sing{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#arrange-pop-sing::-webkit-scrollbar{
+    display: none;
+}
+.single-pop-sing{
+    width: 100px;
+    height: 90%;
+}
+.singer-img-hindi{
+    width: 97%;
+}
+.singer-img img{
+    width: 100%;
+    height: 90px;
+}
+.singer-name h3{
+    font-size: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+/* music type  */
+
+#music-type{
+    margin-top: 4%;
+    margin-bottom: 0;
+}
+.single-music-type{
+    height: 100px;
+}
+.music-type-text{
+    color: black;
+    font-size: 18px;
+    top: 15%;
+    left: 35%;
+}
+.long-txt{
+    left: 20%;
+}
+
+/* aside section  */
+
+#aside-sec{
+    display: none;
+}
+#side-bar :target{
+    display: block;
+  
+} 
+
+#side-bar{
+    width: 50px;
+    height: 40px;
+    background-color: PeachPuff;
+    border-radius: 10px 10px;
+    margin-left: 92%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#side-bar i{
+    color: black;
+    font-size: 25px;
+    margin-left: 20%;
+    padding: 5px; 
+}
+#side-bar i:hover #aside-sec{
+    display: block;
+}
+/* Footer  */
+.fa-heart-o{
+    font-size: 18px;
+    margin: 10px 2px;
+}
+.fa-ban{
+    font-size: 18px;
+    margin: 10px 2px;
+}  
+.circle{
+    margin-top: -2px;
+}
+/* right control bar  */
+.control-right{
+    width: 20%;
+    display: flex;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+.control-right i{
+    font-size: 16px;
+    margin-left: 0px;
+}
+.control-right i{
+    margin-left: 5px;
+    margin-top: 50%;
+}
+.prog-bar{
+    position: relative;
+    margin-left: 5px;
+    margin-top: 16px;
+}
+
+}
+
+
+/* for javascript  */
+
+.heart-color{
+    color: green!important;
+}

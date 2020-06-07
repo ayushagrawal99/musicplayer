@@ -1,0 +1,614 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color:  	rgb(0, 51, 51);
+}
+
+/* ......................... Navigation .................... */
+#nav{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 2;
+    background-color: DimGray;
+}
+#logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+.logo-img{
+    width: 22%;
+    height: 100%;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+.logo-img img{
+    width:95%;
+    height: 95%;
+    margin: 2%;
+
+}.logo-text{
+    width: 25%;
+    height: 90%;
+    margin-left: 2%;
+}
+.logo-text h3{
+    line-height: 2px;
+    letter-spacing: 0.02rem;
+    font-size:1.1rem;
+    color: wheat;
+}
+#logo-fav{
+    margin-top: -5px;
+}
+#logo-fav h3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    margin-top: 3px;
+}
+#logo-fav h3 a:hover{
+    color: rgb(102, 255, 204);
+}
+#logo-search{
+    position: absolute;
+    top : 15%;
+    left:50%;
+    display: flex; 
+    flex-direction: row;
+    border-radius: 15px 15px;
+    background-color: white;
+}
+.inp input[type=text]{
+    width: 220px;
+    height: 18px;
+    background: transparent;
+    border:none;
+    border-radius: 10px 10px;
+    padding: 7px;
+    color: black;
+    font-size: 20px;
+}
+.s-log a i{
+    width: 25px;
+    height : 25px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+#notif a i{
+    position: absolute;
+    left:84%;
+    top:20%;
+    font-size: 1.6rem;
+    color:  white
+}
+#prof-pic img{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left:90%;
+    border-radius: 50%;;
+}
+
+/* ................... Coldplay information section ................... */
+
+/* coldplay image  */
+#full-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#main{
+    width: 65%;
+    margin-top: 8vh;
+}
+#coldplay-info{
+    width: 85%;
+    margin: 1% auto;
+    display: flex;
+    color: white;
+}
+.coldplay-pic{
+    width: 35%;
+    height: 280px;
+    margin: 5px;
+}
+.coldplay-pic img{
+    width: 90%;
+    height: 100%;
+}
+.coldplay-details{
+    width: 60%;
+    margin: 1% auto;
+}
+.coldplay-name h3{
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 2.5%;
+    font-family: sans-serif;
+}
+.coldplay-name span{
+    font-size: 13px;
+    margin-left: 58%;
+}
+.coldplay-name p{   
+    font-size: 12px;
+    margin-left: 3%;
+    margin-top: -27px;     
+    font-weight: 500;
+}
+.coldplay-name p:last-child{
+    font-size: 13px;
+    margin-left: 3%;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: -10px;
+}
+.additional-info button{
+    width: 25%;
+    height: 40px;
+    margin-top: 7%;
+    margin-left: 10%;
+    color: white;
+    border: none;
+    font-size: 17px;
+    padding: 5px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(0, 153, 51),rgb(153, 255, 102));
+}
+.additional-info span{
+    margin-left: 25%;
+}
+.additional-info a i{
+    color: white;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.additional-info a i:hover{
+    color: red;
+}
+.songs-num p{
+    font-size: 12px;
+    margin-left: 10%;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+/* coldplay song details  */
+#all-songs-container{
+    width: 85%;
+    height: 400px;
+    margin: 1% auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#all-songs-container::-webkit-scrollbar{
+    display: none;
+}
+.single-song-div{
+    width: 100%;
+    margin: 1% 0;
+    background-color: rgb(224, 224, 209);
+    display: flex;
+}
+.song-num{
+    margin: 5px;
+    background-color:rgb(224, 224, 209);
+}
+.song-num h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 80%;
+    background-color:rgb(224, 224, 209);
+}
+.song-pic{
+    width: 8%;
+    height: 60px;
+    background-color: rgb(224, 224, 209);
+}
+.song-pic img{
+    width: 85%;
+    height: 85%;
+    margin: 7.5% 7.5%;
+}
+.song-time{
+    margin-left: 35%;
+    margin-top: 1%;
+    background-color: rgb(224, 224, 209);
+}
+.song-time p{
+    background-color: rgb(224, 224, 209);
+}
+.song-icons{
+    margin-left: 40%;
+    margin-top: 2%;
+    background-color: rgb(224, 224, 209);
+}
+.song-icons i.fa-heart-o{
+    font-size: 23px;
+    background-color: rgb(224, 224, 209);
+}
+.song-icons i.fa-plus{
+    font-size: 25px;
+    font-size: 600;
+    margin-left: 15px;
+    background-color: rgb(224, 224, 209);
+}
+
+/* aside sextion  */
+
+#aside{
+    width: 28%;
+    margin-top: 4%;
+}
+#aside-head h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 550;
+}
+#aside-head span{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 50%;
+}
+
+/* aside sec upper songs  */
+
+.song-container{
+    width: 100%;
+    height: 290px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.song-container::-webkit-scrollbar{
+    display: none;
+}
+.single-div{
+    width: 90%;
+    margin: 0% auto;
+    display: flex;
+}
+.aside-upper-pic{
+    width: 25%;
+    height: 100Px;
+}
+.aside-upper-pic img{
+    width: 100%;
+    height: 90Px;
+    margin: 4px 0;
+}
+.aside-upper-name{
+    margin-left: 7%;
+    margin-top: 2%;
+}
+.aside-upper-name h3{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 15px;
+}
+.aside-upper-name p{
+    font-size: 14px;
+    color: white;
+    line-height: 0;
+}
+.aside-upper-icons{
+    color: white;
+    margin-left: 14%;
+}
+.aside-upper-icons i{
+   margin-top: 15px;
+   font-size: 22px;
+   margin-left: 100%;
+}
+.aside-upper-icons p{
+    margin-top: 5px;
+    margin-left: 90%;
+}
+
+/* recent played  */
+
+#recent-container{
+    width: 100%;
+    height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-left: 5%;
+}
+#recent-container::-webkit-scrollbar{
+    display: none;
+}
+.single-recent{
+    display: flex;
+    width: 90%;
+    height: 20%;
+    color: white;
+    margin-top: 1%;
+}
+.recent-num p{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 40%;
+    margin-left: 7px;
+}
+.recent-image{
+    width: 15%;
+    height: 40px;
+    margin: auto 2%;
+}
+.recent-image img{
+    width: 90%;
+    height: 40px;
+}
+.recent-info{
+margin-top: 5px;
+}
+.recent-info h3{
+   font-size: 13px;
+   font-weight: 500;
+   margin-top: 10%;
+}
+.recent-info p{
+    font-size: 11px;
+    line-height: 0;
+}
+.recent-logo{
+    font-size: 18px;
+    margin-left: 55%;
+    margin-top: 2%;
+}
+
+   /* ..........................media query ................... */
+  /* ~~~~~~~~~~~~~~~~~~ media query for tablets ~~~~~~~~~~~~~~~ */
+
+  @media only screen and (max-width: 768px) {
+
+    /* navigation bar */
+    #logo-fav h3{
+        margin-top: 12px;
+    }
+    #logo-fav h3 a{
+        font-size: 18px;
+    }
+    #logo-search{
+        left: 40%;
+        top: 25%;
+    }
+    .inp input[type=text]{
+        width: 180px;
+        height: 12px;
+        font-size: 15px;
+    }
+    .s-log a i{
+        width: 15px;
+        height : 15px;
+        font-size: 1rem;
+    }
+    #notif a i{
+        left:78%;
+        top:30%;
+        font-size: 1.3rem;
+        color: white;
+    }
+    #prof-pic img{
+        width: 2rem;
+        height: 2rem;
+        left:85%;
+        border-radius: 50%;
+        top: 20%;
+    }
+ /* coldplay left sec  */
+
+    .coldplay-pic{
+        height: 200px;
+    }
+    .coldplay-pic img{
+        width: 100%;
+        height: 100%;
+    }
+    .coldplay-name h3{
+        font-size: 22px;
+    }
+    .coldplay-name span{
+        font-size: 11px;
+        font-weight: normal;
+        color: rgb(27, 211, 211);
+        margin-left: 30%;
+    }
+    .coldplay-name p{   
+        font-size: 11px;
+        margin-left: 3%;
+        margin-top: -20px;      
+        font-weight: 500;
+    }
+    .additional-info button{
+        width: 40%;
+        height: 40px;
+        margin-top: 7%;
+        margin-left: -40%;
+    }
+    .additional-info span{
+        margin-left: 40%;
+        color: blanchedalmond;
+    }
+    .additional-info a i{
+        color: rgb(34, 139, 130);
+    }
+    .songs-num p{
+        font-size: 11px;
+        margin-left: -43%;
+        margin-top: 5px;
+        font-weight: normal;
+    }
+    /* coldplay song details  */
+
+    .single-song-div{
+        margin: 2% 0;
+    }
+    .song-num{
+        margin: 5px;
+        background-color:rgb(224, 224, 209);
+    }
+    .song-num h3{
+        font-size: 14px;
+        margin-top: 60%;
+        background-color:rgb(224, 224, 209);
+    }
+    .song-pic{
+        width: 50px;
+        height: 50px;
+        background-color: rgb(224, 224, 209);
+    }
+    .song-pic img{
+        width: 85%;
+        height: 85%;
+        margin: 7.5% 7.5%;
+    }
+    .song-time{
+        margin-left: 30%;
+        margin-top: 0%;
+    }
+    .song-icons{
+        margin-left: 30%;
+        margin-top: 0%;
+        background-color: rgb(224, 224, 209);
+    }
+    .song-icons i.fa-heart-o{
+        font-size: 20x;
+        margin-top: 10px;
+        background-color: rgb(224, 224, 209);
+    }
+    .song-icons i.fa-plus{
+        font-size: 22px;
+        font-size: 600;
+        margin-left: 8px;
+        background-color: rgb(224, 224, 209);
+    }
+    /* right side recent played section  */
+    #recent-container{
+        width: 100%;
+        height: 240px;
+    }
+    .single-recent{
+        width: 90%;
+        height: 20%;
+        margin-top: 2%;
+    }
+    .recent-num p{
+        font-size: 13px;
+        margin-top: 40%;
+    }
+    .recent-image{
+        width: 25%;
+        height: 40px;
+    }
+    .recent-image img{
+        width: 90%;
+        height: 38px;
+    }
+    .recent-info{
+        margin-top: 5px;
+        margin-left: 2px;
+        margin-top: 0px;
+    }
+    .recent-info h3{
+       font-size: 13px;
+       font-weight: 500;
+       margin-top: 10%;
+    }
+    .recent-info p{
+        font-size: 11px;
+        line-height: 0;
+    }
+    .recent-logo{
+        font-size: 18px;
+        margin-top: 2%;
+        margin-left: 25%;
+    }
+    
+    /* aside similar artist  */
+
+    #aside{
+        width: 28%;
+        margin-top: 4%;
+    }
+    #aside-head h3{
+        color: white;
+        font-size: 20px;
+        font-weight: 550;
+    }
+    #aside-head span{
+        color: white;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 50%;
+    }
+    
+    /* aside sec upper songs  */
+    
+    .song-container{
+        width: 100%;
+        height: 280px;
+    }
+    .single-div{
+        width: 100%;
+        height: 90px;
+        margin: 3% auto;
+    }
+    .aside-upper-pic{
+        width: 35%;
+        height: 90%;
+    }
+    .aside-upper-pic img{
+        width: 100%;
+        height: 80Px;
+    }
+    .aside-upper-name{
+        margin-left: 4%;
+        margin-top: 2%;
+    }
+    .aside-upper-name h3{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .aside-upper-name p{
+        font-size: 14px;
+    }
+    .aside-upper-icons{
+        color: white;
+        margin-left: 9%;
+    }
+    .aside-upper-icons i{
+       margin-top: 12px;
+       font-size: 18x;
+       margin-left: 10%;
+    }
+    .aside-upper-icons p{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 0%;
+    }
+
+    #aside-head{
+        width: 100%;
+        margin-top: 5px;
+    }
+    #aside-head h3{
+        font-size: 19px;
+    }
+    #aside-head span{
+        font-size: 14px;
+        margin-left: 40%;   
+    }
+}
